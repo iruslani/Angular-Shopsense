@@ -1,0 +1,866 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"li",
+				"link	Tag"
+			],
+			[
+				"t",
+				"tbody	Tag"
+			],
+			[
+				"hello",
+				"helloWorld"
+			],
+			[
+				"create",
+				"createOnEnter"
+			],
+			[
+				"di",
+				"div"
+			],
+			[
+				"he",
+				"header	Tag"
+			],
+			[
+				"login",
+				"login-form"
+			],
+			[
+				"vendor",
+				"vendorText"
+			],
+			[
+				"created",
+				"createdAt"
+			],
+			[
+				"logout",
+				"logoutUser"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"td",
+				"td"
+			],
+			[
+				"edit",
+				"edit-vendor"
+			],
+			[
+				"d",
+				"div"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"log",
+				"logOut"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"mod",
+				"modal-header"
+			],
+			[
+				"moda",
+				"modal-title"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"padding",
+				"padding-right"
+			],
+			[
+				"border",
+				"border-left"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"scr",
+				"script"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"st",
+				"staticfiles_urlpatterns"
+			],
+			[
+				"url",
+				"urlpatterns"
+			],
+			[
+				"thu",
+				"thumb"
+			],
+			[
+				"it",
+				"item3"
+			],
+			[
+				"User",
+				"UserProfile"
+			],
+			[
+				"h",
+				"h2	Tag"
+			],
+			[
+				"fo",
+				"form_data"
+			],
+			[
+				"form",
+				"form_data"
+			],
+			[
+				"templ",
+				"template_name"
+			],
+			[
+				"lo",
+				"logging"
+			],
+			[
+				"forma",
+				"format"
+			],
+			[
+				"pro",
+				"Products"
+			],
+			[
+				"Review",
+				"ReviewsForm"
+			],
+			[
+				"products",
+				"products_id"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"prodc",
+				"product"
+			],
+			[
+				"product",
+				"products_id"
+			],
+			[
+				"for",
+				"form"
+			],
+			[
+				"Pro",
+				"ProductForm"
+			],
+			[
+				"U",
+				"UserCreationForm"
+			],
+			[
+				"Use",
+				"UserCreationForm"
+			],
+			[
+				"register",
+				"register_success"
+			],
+			[
+				"HttpRe",
+				"HttpResponseRedirect"
+			],
+			[
+				"render",
+				"render_to_response"
+			],
+			[
+				"get",
+				"get_context_data"
+			],
+			[
+				"http",
+				"HttpResponse"
+			],
+			[
+				"i",
+				"img	Tag"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"padding-",
+				"padding-top"
+			],
+			[
+				"load",
+				"loadMoreTweets"
+			],
+			[
+				"notif",
+				"notification"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"p",
+				"padding"
+			],
+			[
+				"Item",
+				"ItemAdmin"
+			],
+			[
+				"hours",
+				"hours_ahead2"
+			],
+			[
+				"Re",
+				"RequestContext"
+			],
+			[
+				"data",
+				"dataSource"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"tool",
+				"tooltip-demo"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"happe",
+				"happenlyNav"
+			],
+			[
+				"insta",
+				"insta_next_url"
+			],
+			[
+				"fun",
+				"function"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/iwan/Documents/websites/Angular-HTML5BoilerPlate-Bootstrap/sample.html",
+			"settings":
+			{
+				"buffer_size": 6123,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/iwan/Documents/websites/Angular-HTML5BoilerPlate-Bootstrap/css/app.css",
+			"settings":
+			{
+				"buffer_size": 63,
+				"line_ending": "Unix",
+				"name": ".placeholder img {"
+			}
+		},
+		{
+			"file": "/Users/iwan/Documents/websites/Angular-HTML5BoilerPlate-Bootstrap/index.html",
+			"settings":
+			{
+				"buffer_size": 2297,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 27.0,
+		"selected_items":
+		[
+			[
+				"Snippet: ",
+				"Snippet: html5"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"Snippet: boot",
+				"Snippet: Bootstrap basic four column grid"
+			],
+			[
+				"fet",
+				"Fetch: File"
+			],
+			[
+				"fetc",
+				"Fetch: File"
+			],
+			[
+				"Snippet: add",
+				"Snippet: add"
+			],
+			[
+				"fe",
+				"Fetch: File"
+			],
+			[
+				"f",
+				"Fetch: Package"
+			],
+			[
+				"jq",
+				"Snippet: jQuery(document).ready"
+			],
+			[
+				"Snippet: do",
+				"Snippet: document.ready - $(function()"
+			],
+			[
+				"Sn",
+				"Set Syntax: CSS"
+			],
+			[
+				"lo",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"fetch",
+				"Fetch: File"
+			],
+			[
+				"Package inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/iwan/Documents/websites/Angular-ShopSense/index.html",
+		"/Users/iwan/Documents/websites/Angular-ShopSense/components/html5-boilerplate/index.html",
+		"/Users/iwan/Documents/code/ICS-Tiles/widget_UI8_v2.css",
+		"/Users/iwan/Documents/code/ICS-Tiles/default.html",
+		"/Users/iwan/Documents/Cordova/Firebase/myApp/www/index.html",
+		"/Users/iwan/Documents/Cordova/Firebase/myApp/www/js/app.js",
+		"/Users/iwan/Documents/websites/popelist.com/cloudCode/public/javascripts/app.js",
+		"/Users/iwan/Documents/code/YesMail-Demo/demo.html",
+		"/Users/iwan/Documents/code/YesMail-Demo/ink.css",
+		"/Users/iwan/Documents/code/YesMail-Demo/demo-inline.html",
+		"/Users/iwan/Documents/websites/weddingApp_v3_foundation/index.html",
+		"/Users/iwan/Documents/Cordova/Foundation/www/js/index.js",
+		"/Users/iwan/Documents/Cordova/test/www/index.html",
+		"/Users/iwan/Documents/websites/Parse-Todo-app/js/app.js",
+		"/Users/iwan/Documents/websites/weddingApp_v3/index.html",
+		"/Users/iwan/Documents/websites/weddingApp_v3_foundation/css/wedding.css",
+		"/Users/iwan/Documents/websites/weddingApp_v3/js/app.js",
+		"/Users/iwan/Documents/websites/weddingApp_v3_foundation/js/app-backup.js",
+		"/Users/iwan/Documents/code/foundation-5.4.0/index.html",
+		"/Users/iwan/Documents/websites/weddingApp_v3_foundation/stylesheets/wedding.css",
+		"/Users/iwan/Documents/websites/Parse-Todo-app/js/todos.js",
+		"/Users/iwan/Documents/websites/Parse-Todo-app/index.html",
+		"/Users/iwan/Documents/websites/weddingApp_v3/javascripts/app.js",
+		"/Users/iwan/Documents/websites/weddingApp_v2/javascripts/app.js",
+		"/Users/iwan/Documents/websites/weddingApp_v2/index.html",
+		"/Users/iwan/Documents/Cordova/weddingApp/demo-angular-jquery.html",
+		"/Users/iwan/Documents/Cordova/weddingApp/www/styles/login.css",
+		"/Users/iwan/Documents/Cordova/weddingApp/www/js/app.js",
+		"/Users/iwan/Documents/Cordova/weddingApp/www/index.html",
+		"/Users/iwan/Documents/Cordova/onsen_tab_bar/www/js/app.js",
+		"/Users/iwan/Documents/Cordova/weddingApp/www/index-backup.html",
+		"/Users/iwan/Documents/Cordova/onsen_tab_bar/www/index.html",
+		"/Users/iwan/Documents/Cordova/weddingApp/config.xml",
+		"/Users/iwan/Documents/Cordova/onsen_tab_bar/config.xml",
+		"/Users/iwan/Documents/Cordova/onsen_tab_bar/www/styles/app.css",
+		"/Users/iwan/Documents/Cordova/sample/hello/www/js/cordova create test com.example.hello test",
+		"/Users/iwan/Documents/websites/weddingApp_v1/index.html",
+		"/Users/iwan/Documents/websites/shareImage/cloud/user.js",
+		"/Users/iwan/Documents/websites/shareImage/cloud/app.js",
+		"/Users/iwan/Documents/websites/weddingApp_v1/javascripts/app.js",
+		"/Users/iwan/Documents/websites/popelist.com/cloudCode/cloud/views/user/register.ejs",
+		"/Users/iwan/Documents/websites/popelist.com/cloudCode/cloud/controllers/user.js",
+		"/Users/iwan/Documents/websites/popelist.com/cloudCode/cloud/views/shopstyle/index.ejs",
+		"/Users/iwan/Documents/websites/popelist.com/cloudCode/cloud/controllers/shop.js",
+		"/Users/iwan/Documents/websites/popelist.com/cloudCode/cloud/main.js",
+		"/Users/iwan/Documents/websites/popelist.com/cloudCode/cloud/views/_footer.ejs",
+		"/Users/iwan/Documents/websites/shareImage/public/javascripts/main.js",
+		"/Users/iwan/Documents/websites/popelist.com/cloudCode/cloud/views/_header.ejs",
+		"/Users/iwan/Documents/websites/popelist.com/cloudCode/cloud/controllers/list.js",
+		"/Users/iwan/Documents/websites/weddingApp/js/app.js",
+		"/Users/iwan/Documents/websites/AnyBlog/cloud/app.js",
+		"/Users/iwan/Documents/websites/AnyBlog/cloud/controllers/posts.js",
+		"/Users/iwan/Documents/websites/popelist.com/cloudCode/cloud/views/index.ejs",
+		"/Users/iwan/Documents/websites/popelist.com/cloudCode/cloud/views/index.html",
+		"/Users/iwan/Documents/websites/coordino/index.php",
+		"/Users/iwan/Documents/code/skipNav/skipnav.css",
+		"/Users/iwan/Documents/code/skipNav/skipnav.js",
+		"/Users/iwan/Documents/code/skipNav/index.html",
+		"/Users/iwan/Documents/websites/weddingApp/index.html",
+		"/Users/iwan/Documents/websites/CaliforniaExterminatingServices/aboutus-text.html",
+		"/Users/iwan/Documents/websites/CaliforniaExterminatingServices/home.html",
+		"/Users/iwan/Documents/websites/weddingApp/js/todos.js",
+		"/Users/iwan/Documents/websites/weddingApp/css/wedding.css",
+		"/Users/iwan/Documents/websites/weddingApp/stylesheets/wedding.css",
+		"/Users/iwan/Documents/websites/weddingApp/index_new.html",
+		"/Users/iwan/Documents/websites/shareImage/cloud/views/home.ejs",
+		"/Users/iwan/Documents/websites/weddingApp/javascripts/app.js",
+		"/Users/iwan/Documents/websites/weddingApp/backup/app.js",
+		"/Users/iwan/Documents/websites/weddingApp/stylesheets/app.css",
+		"/Users/iwan/Documents/websites/weddingApp/backup/index.html",
+		"/Users/iwan/Documents/websites/Parse-Todo-app/.htaccess",
+		"/Users/iwan/Documents/websites/pubnub/index.html",
+		"/Users/iwan/Documents/websites/pubnub/css/site.css",
+		"/Users/iwan/Library/Application Support/Sublime Text 2/Packages/User/bootstrap-timeline-css.sublime-snippet",
+		"/Users/iwan/Library/Application Support/Sublime Text 2/Packages/User/bootstrap-Timeline-dotted-snippet",
+		"/Users/iwan/Documents/websites/shareImage/cloud/views/layout.ejs",
+		"/Users/iwan/Library/Application Support/Sublime Text 2/Packages/User/html5.sublime-snippet",
+		"/Users/iwan/Documents/websites/Anyimg-master/cloud/main.js",
+		"/Users/iwan/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/iwan/Library/Application Support/Sublime Text 2/Packages/User/bootstrap-timeline.sublime-snippet",
+		"/Users/iwan/Documents/websites/Anyimg-master/README.md",
+		"/Users/iwan/Documents/websites/Parse-Todo-app/css/plugins/bootstrap.css",
+		"/Users/iwan/Documents/websites/Parse-Todo-app/css/todos.css",
+		"/Users/iwan/Documents/websites/Parse-Todo-app/css/style.css",
+		"/Users/iwan/Documents/websites/iwanruslani.com/template/base.html",
+		"/Users/iwan/Documents/websites/Parse-Todo-app/js/templates/login-template.js",
+		"/Users/iwan/Documents/websites/Parse-Todo-app/css/app.css",
+		"/Users/iwan/Documents/websites/iwanruslani.com/template/includes/header.html",
+		"/Users/iwan/Documents/websites/Parse-Todo-app/js/plugins/back-to-top.js",
+		"/Users/iwan/Documents/websites/iwanruslani.com/portfolio/static/js/myparse.js",
+		"/Users/iwan/Documents/websites/iwanruslani.com/portfolio/static/js/index.js",
+		"/Users/iwan/Documents/code/parse-js-blank/index.html",
+		"/Users/iwan/Documents/websites/iwanruslani.com/portfolio/views.py",
+		"/Users/iwan/Documents/websites/iwanruslani.com/portfolio/urls.py",
+		"/Users/iwan/Documents/websites/iwanruslani.com/template/page.html",
+		"/Users/iwan/Documents/websites/iwanruslani.com/template/includes/page-scripts.html",
+		"/Users/iwan/Documents/websites/iwanruslani.com/template/includes/global-scripts.html",
+		"/Users/iwan/Documents/websites/iwanruslani.com/portfolio/static/css/app.css",
+		"/Users/iwan/Documents/websites/iwanruslani.com/template/pages/forms/registration.html",
+		"/Users/iwan/Documents/websites/iwanruslani.com/template/pages/portfolio/portfolio_item.html",
+		"/Users/iwan/Documents/websites/iwanruslani.com/template/pages/portfolio/portfolio_4_column.html",
+		"/Users/iwan/Documents/websites/iwanruslani.com/template/pages/portfolio/portfolio_2_column.html",
+		"/Users/iwan/Documents/websites/iwanruslani.com/template/includes/footer.html",
+		"/Users/iwan/Documents/websites/iwanruslani.com/template/includes/breadcrumbs.html",
+		"/Users/iwan/Documents/websites/iwanruslani.com/portfolio/static/css/style.css",
+		"/Users/iwan/Documents/websites/coordino/app/config/database.php",
+		"/Users/iwan/Documents/websites/django-notes.txt",
+		"/Applications/MAMP/htdocs/cake/libs/configure.php",
+		"/Applications/MAMP/htdocs/cake/bootstrap.php",
+		"/Applications/MAMP/htdocs/.htaccess",
+		"/Applications/MAMP/htdocs/app/config/database.php",
+		"/Applications/MAMP/htdocs/app/views/layouts/default.ctp",
+		"/Applications/MAMP/htdocs/app/config/routes.php",
+		"/Applications/MAMP/htdocs/app/webroot/index.php",
+		"/Applications/MAMP/htdocs/app/index.php",
+		"/Applications/MAMP/htdocs/app/config/database_sample.php",
+		"/Applications/MAMP/htdocs/app/webroot/css/skin.css",
+		"/Applications/MAMP/htdocs/index.php",
+		"/Applications/MAMP/conf/apache/original/httpd.conf",
+		"/Users/iwan/Documents/websites/StatementRewardsDashboard/index.html",
+		"/Users/iwan/Documents/websites/StatementRewardsDashboard/blueFinancial.html",
+		"/Users/iwan/Documents/websites/iwanruslani.com/_dont_Upload/backup/portfolio_2_column.html",
+		"/Users/iwan/Documents/websites/iwanruslani.com/template/pages/contact.html",
+		"/Users/iwan/Documents/websites/iwanruslani.com/_dont_Upload/backup/contact.html",
+		"/Users/iwan/Documents/websites/iwanruslani.com/portfolio/static/js/pages/contact.js",
+		"/Users/iwan/Documents/websites/iwanruslani.com/template/includes/plugins-scripts.html",
+		"/Users/iwan/Documents/websites/iwanruslani.com/manage.py",
+		"/Users/iwan/Documents/websites/StatementRewards/index.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"<open folders>",
+			"/Users/iwan/Documents/websites/shareImage",
+			"/Users/iwan/Documents/websites/Parse-Todo-app",
+			"/Applications/MAMP/htdocs/app",
+			"/Users/iwan/Documents/websites/iwanruslani.com/portfolio/static",
+			"/Users/iwan/Documents/websites/iwanruslani.com/portfolio/static,/Users/iwan/Documents/websites/iwanruslani.com/portfolio/static",
+			"/Users/iwan/Documents/websites/iwanruslani.com/portfolio/static",
+			"/Users/iwan/Documents/websites/bootstrap-THEMES/unify",
+			"",
+			"/Users/iwan/Documents/websites/bootstrap-THEMES/unify/resources/js,/Users/iwan/Documents/websites/bootstrap-THEMES/unify",
+			"/Users/iwan/Documents/websites/bootstrap-THEMES/unify/resources/js",
+			"",
+			"/Users/iwan/Documents/websites/bootstrap-THEMES/unify/resources"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"; ",
+			"random",
+			"table tr td",
+			"toggle",
+			"TodoView",
+			"addSome",
+			"TodoView",
+			"TodoList",
+			"toggle",
+			"toggleDone",
+			"toggle",
+			"TodoView",
+			"reset",
+			"todo-list",
+			"reset",
+			"addAll",
+			"todo-list",
+			"current",
+			"todo-stats",
+			"createCampaign",
+			"new-todo",
+			"statsTemplate",
+			"stats-template",
+			"TodoView",
+			"item-template",
+			"AppState",
+			"LogInView",
+			"AppState",
+			"state",
+			"LogInView",
+			"ManageTodosView",
+			"  \n",
+			"directives",
+			"TodoList",
+			"el:",
+			"loginview",
+			"AppState",
+			"LogInView",
+			"filters",
+			"statsTemplate",
+			"stats-template",
+			"ManageTodosView",
+			"TodoView",
+			"LogInView",
+			"tagName",
+			"closeModal",
+			"medium-3",
+			"medium-",
+			"type=file",
+			"fileUploadControl",
+			"upload",
+			"fileUploadControl",
+			"upload",
+			"fileUploadControl",
+			"user-info",
+			"content",
+			"new-to",
+			"item",
+			"alert",
+			"item",
+			"todo-count",
+			"footer",
+			"col-",
+			"bg.png",
+			"_.tem",
+			"logOut",
+			"_.template",
+			"_template",
+			"logOut",
+			"{% get_static_prefix %}",
+			"user-info",
+			"{% get_static_prefix %}",
+			"up.png",
+			"{% get_static_prefix %}",
+			"LogInView",
+			"ManageTodosView",
+			"LogInView",
+			"login-form",
+			"ttp://htmlstream.com/preview/unify/",
+			"http://htmlstream.com/preview/unify/",
+			"class=\"tabs\"",
+			"font",
+			"resources/",
+			"/resources/",
+			"orange",
+			"orange.css",
+			"sliders/elastislide/",
+			"resources/images/users/",
+			"/sliders/bg3.jpg",
+			"../images/",
+			"../images",
+			"./resources/images",
+			"assets/img/sliders/elastislide/",
+			"icon-angle-down",
+			"search",
+			"icon",
+			"assets/image",
+			"icon",
+			"Search",
+			"assets/img/main",
+			"images/theme",
+			"logo1-blue.png\nlogo1-default.png\nlogo1-light.png\nlogo1-orange.png\nlogo1-red.png\nlogo2-blue.png\nimages/themes",
+			"/images/themes/",
+			"fullwidthbanner",
+			"cslider",
+			"initParallaxSlider",
+			"bxslider",
+			"bg.jpg",
+			"s.ytimg.com",
+			"css",
+			"monda",
+			"/themes/headers",
+			"hemes/sliders/",
+			"bg-heading.png",
+			"/plugins/",
+			"/plugins/parallax-slider/img",
+			"default.css",
+			"header-1",
+			"header",
+			"/theme/slider/",
+			"../../images/theme/slider/",
+			"bg-heading.png",
+			"bg-text",
+			"images/themes/slider",
+			"plugins/parallax-slider/img",
+			"plugins/para",
+			"47911018",
+			"LivePass.js"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"../img",
+			"{% get_static_prefix %}img",
+			".resources/images/users/blog/",
+			"fa fa-sm fa-chevron-down",
+			"./resources/images/users/blog",
+			"images/themes/slider",
+			"resources"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/iwan/Documents/websites/Angular-HTML5BoilerPlate-Bootstrap/sample.html",
+					"settings":
+					{
+						"buffer_size": 6123,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2498,
+								2459
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 881.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/iwan/Documents/websites/Angular-HTML5BoilerPlate-Bootstrap/css/app.css",
+					"settings":
+					{
+						"buffer_size": 63,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								63,
+								63
+							]
+						],
+						"settings":
+						{
+							"auto_name": ".placeholder img {",
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/iwan/Documents/websites/Angular-HTML5BoilerPlate-Bootstrap/index.html",
+					"settings":
+					{
+						"buffer_size": 2297,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								920,
+								920
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 27.0
+	},
+	"output.git":
+	{
+		"height": 112.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 230.0,
+	"status_bar_visible": false
+}
