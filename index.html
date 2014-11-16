@@ -29,18 +29,18 @@
 
 <!-- Container Start -->
 <div class="container">
-
-  <!-- Header Start -->
+<!-- Header Start -->
   <div class="row">
     <div class="col-sm-12 col-md-12 ">
       <h1><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Project name</a></h1>
     </div> 
   </div>
-  <!-- Header Ends -->
-
-  <!-- Simple Form Start -->
-  <div class="row" >
-    <div class="col-sm-12 col-md-12">
+<!-- Header Ends -->
+<!-- Taba Start -->
+<div ng-controller="TabsDemoCtrl">
+  <tabset justified="true">
+    <!-- Simple Form Tab Start -->
+    <tab heading="Form Example">
       <div class="panel panel-default">
         <div class="panel-heading">
             <h3 class="panel-title"><label>Simple Form:</label></h3>
@@ -54,13 +54,11 @@
           </div>       
         </div>
       </div>
-    </div>    
-  </div>
-  <!-- Simple Form Ends -->
-  <!-- Todo Start -->
-  <div class="row " ng-controller="TodoController">
-    <div class="col-sm-12 col-md-12">
-      <div class="panel panel-default">
+    </tab>
+    <!-- Simple Form Tab Ends -->
+    <!-- Todo Tab Start -->    
+    <tab heading="Long Justified">
+      <div class="panel panel-default" ng-controller="TodoController">
         <div class="panel-heading">
           <h3 class="panel-title"><label>Todo:</label></h3>
         </div>
@@ -82,9 +80,20 @@
           </div>    
         </div>
         </div>
-    </div>
-  </div>
-  <!-- Todo Ends -->
+    </tab>
+    <!-- Todo Tab Ends -->
+    <tab heading="SJ">Short Labeled Justified content</tab>
+    <!-- Alert Tab Start -->
+    <tab select="alertMe()">
+      <tab-heading>
+        <i class="glyphicon glyphicon-bell"></i> Alert!
+      </tab-heading>
+      I've got an HTML heading, and a select callback. Pretty cool!
+    </tab>
+    <!-- Alert Tab Ends -->
+  </tabset>
+</div>
+<!-- Tabs Ends -->
 </div>
 <!-- Container Ends -->
 </body>
