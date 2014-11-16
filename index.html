@@ -27,60 +27,66 @@
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<!-- Add your site or application content here -->
-
+<!-- Container Start -->
 <div class="container">
+
+  <!-- Header Start -->
   <div class="row">
     <div class="col-sm-12 col-md-12 ">
       <h1><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Project name</a></h1>
     </div> 
   </div>
+  <!-- Header Ends -->
 
-
-
-  <div class="row jumbotron" >
+  <!-- Simple Form Start -->
+  <div class="row" >
     <div class="col-sm-12 col-md-12">
-      <label>Simple Form:</label>
-    </div>    
-    <div class="col-sm-3 col-md-2">
-        <input type="text" ng-model="hello" class="form-control" placeholder="Search...">
-    </div>
-    <div class="col-sm-3 col-md-2">
-       <form class="">
-        <p>{{hello}}</p>
-      </form>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title"><label>Simple Form:</label></h3>
+        </div>
+        <div class="panel-body">
+          <div class="col-sm-3 col-md-2">
+              <input type="text" ng-model="hello" class="form-control" placeholder="Search...">
+          </div>
+          <div class="col-sm-3 col-md-2">
+            <p>You said: {{hello}}</p>
+          </div>       
+        </div>
+      </div>
     </div>    
   </div>
-
-  <div class="row jumbotron" ng-controller="TodoController">
+  <!-- Simple Form Ends -->
+  <!-- Todo Start -->
+  <div class="row " ng-controller="TodoController">
     <div class="col-sm-12 col-md-12">
-      <label>Todo:</label>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title"><label>Todo:</label></h3>
+        </div>
+        <div class="panel-body">
+          <div class="col-sm-5 col-md-5">
+            <form ng-submit="addTodo()">
+              <input type="text" ng-model="todoText"  size="30" placeholder="add new todo here">
+              <input class="btn-primary" type="submit" value="add">
+            </form>
+              <span>{{remaining()}} of {{todos.length}} remaining</span>[ <a href="" ng-click="archive()">archive</a> ]
+          </div>
+          <div class="col-sm-7 col-md-7">
+            <ul class="unstyled">
+              <li ng-repeat="todo in todos">
+                <input type="checkbox" ng-model="todo.done">
+                <span class="done-{{todo.done}}">{{todo.text}}</span>
+              </li>
+            </ul>
+          </div>    
+        </div>
+        </div>
     </div>
-    <div class="col-sm-5 col-md-5">
-      <form ng-submit="addTodo()">
-        <input type="text" ng-model="todoText"  size="30" placeholder="add new todo here">
-        <input class="btn-primary" type="submit" value="add">
-      </form>
-        <span>{{remaining()}} of {{todos.length}} remaining</span>[ <a href="" ng-click="archive()">archive</a> ]
-    </div>
-    <div class="col-sm-7 col-md-7">
-      <ul class="unstyled">
-        <li ng-repeat="todo in todos">
-          <input type="checkbox" ng-model="todo.done">
-          <span class="done-{{todo.done}}">{{todo.text}}</span>
-        </li>
-      </ul>
-    </div>    
   </div>
-
-
-
-
-
-
-
+  <!-- Todo Ends -->
 </div>
-
+<!-- Container Ends -->
 </body>
 </html>
 
