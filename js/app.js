@@ -1,83 +1,117 @@
-var shopSenseApp = angular.module('shopSenseApp', [])
-  shopSenseApp.controller('TodoController', ['$scope', function($scope) {
-    $scope.todos = [
-      {text:'learn angular', done:true},
-      {text:'build an angular app', done:false}];
- 
-    $scope.addTodo = function() {
-      $scope.todos.push({text:$scope.todoText, done:false});
-      $scope.todoText = '';
-    };
- 
-    $scope.remaining = function() {
-      var count = 0;
-      angular.forEach($scope.todos, function(todo) {
-        count += todo.done ? 0 : 1;
-      });
-      return count;
-    };
- 
-    $scope.archive = function() {
-      var oldTodos = $scope.todos;
-      $scope.todos = [];
-      angular.forEach(oldTodos, function(todo) {
-        if (!todo.done) $scope.todos.push(todo);
-      });
-    };
-  }]);
-shopSenseApp.controller('TabsDemoCtrl', function ($scope, $window) {
-  $scope.tabs = [
-    { title:'Dynamic Title 1', content:'Dynamic content 1' },
-    { title:'Dynamic Title 2', content:'Dynamic content 2', disabled: true }
-  ];
+var shopSenseApp = angular.module('shopSenseApp', ['ngRoute']);
 
-  $scope.alertMe = function() {
-    setTimeout(function() {
-      $window.alert('You\'ve selected the alert tab!');
+shopSenseApp.config(function($routeProvider) {
+  $routeProvider
+    .when('/', {
+      controller:'HomeCtrl',
+      templateUrl:'../templates/home.html'
+    })
+/*    .when('/edit/:projectId', {
+      controller:'EditCtrl',
+      templateUrl:'detail.html'
+    })*/
+    .when('/new', {
+      controller:'NewCtrl',
+      templateUrl:'../templates/new.html'
+    })
+    .otherwise({
+      redirectTo:'/'
     });
+});
+
+shopSenseApp.controller('HomeCtrl', function($scope) {
+   $scope.message = 'Home Page';
+});
+shopSenseApp.controller('NewCtrl', function($scope) {
+   $scope.message = 'new page';
+});
+/*.controller('NewCtrl', function($scope, $location, $timeout, Projects) {
+  $scope.save = function() {
+      Projects.$add($scope.project).then(function(data) {
+          $location.path('/');
+      });
   };
+})*/
+
+shopSenseApp.controller('TodoController', ['$scope', function($scope) {
+	$scope.todos = [
+	  {text:'learn angular', done:true},
+	  {text:'build an angular app', done:false}];
+
+	$scope.addTodo = function() {
+	  $scope.todos.push({text:$scope.todoText, done:false});
+	  $scope.todoText = '';
+	};
+
+	$scope.remaining = function() {
+	  var count = 0;
+	  angular.forEach($scope.todos, function(todo) {
+	    count += todo.done ? 0 : 1;
+	  });
+	  return count;
+	};
+
+	$scope.archive = function() {
+	  var oldTodos = $scope.todos;
+	  $scope.todos = [];
+	  angular.forEach(oldTodos, function(todo) {
+	    if (!todo.done) $scope.todos.push(todo);
+	  });
+	};
+}]);
+shopSenseApp.controller('TabsDemoCtrl', function ($scope, $window) {
+	  $scope.tabs = [
+	    { title:'Dynamic Title 1', content:'Dynamic content 1' },
+	    { title:'Dynamic Title 2', content:'Dynamic content 2', disabled: true }
+	  ];
+
+	  $scope.alertMe = function() {
+	    setTimeout(function() {
+	      $window.alert('You\'ve selected the alert tab!');
+	    });
+	  };
 });
 shopSenseApp.controller('TabsetController', ['$scope', function TabsetCtrl($scope) {
-  var ctrl = this,
-      tabs = ctrl.tabs = $scope.tabs = [];
+	var ctrl = this,
+	  tabs = ctrl.tabs = $scope.tabs = [];
 
-  ctrl.select = function(selectedTab) {
-    angular.forEach(tabs, function(tab) {
-      if (tab.active && tab !== selectedTab) {
-        tab.active = false;
-        tab.onDeselect();
-      }
-    });
-    selectedTab.active = true;
-    selectedTab.onSelect();
+	ctrl.select = function(selectedTab) {
+	angular.forEach(tabs, function(tab) {
+	  if (tab.active && tab !== selectedTab) {
+	    tab.active = false;
+	    tab.onDeselect();
+	  }
+	});
+	selectedTab.active = true;
+	selectedTab.onSelect();
+	};
+
+	ctrl.addTab = function addTab(tab) {
+	tabs.push(tab);
+	// we can't run the select function on the first tab
+	// since that would select it twice
+	if (tabs.length === 1) {
+	  tab.active = true;
+	} else if (tab.active) {
+	  ctrl.select(tab);
+	}
   };
 
-  ctrl.addTab = function addTab(tab) {
-    tabs.push(tab);
-    // we can't run the select function on the first tab
-    // since that would select it twice
-    if (tabs.length === 1) {
-      tab.active = true;
-    } else if (tab.active) {
-      ctrl.select(tab);
-    }
-  };
+	ctrl.removeTab = function removeTab(tab) {
+		var index = tabs.indexOf(tab);
+		//Select a new tab if the tab to be removed is selected and not destroyed
+		if (tab.active && tabs.length > 1 && !destroyed) {
+		//If this is the last tab, select the previous tab. else, the next tab.
+		var newActiveIndex = index == tabs.length - 1 ? index - 1 : index + 1;
+		ctrl.select(tabs[newActiveIndex]);
+		}
+		tabs.splice(index, 1);
+		};
 
-  ctrl.removeTab = function removeTab(tab) {
-    var index = tabs.indexOf(tab);
-    //Select a new tab if the tab to be removed is selected and not destroyed
-    if (tab.active && tabs.length > 1 && !destroyed) {
-      //If this is the last tab, select the previous tab. else, the next tab.
-      var newActiveIndex = index == tabs.length - 1 ? index - 1 : index + 1;
-      ctrl.select(tabs[newActiveIndex]);
-    }
-    tabs.splice(index, 1);
-  };
-
-  var destroyed;
-  $scope.$on('$destroy', function() {
-    destroyed = true;
-  });
+		var destroyed;
+		$scope.$on('$destroy', function() {
+		destroyed = true;
+		});
 }])
 
 /**
