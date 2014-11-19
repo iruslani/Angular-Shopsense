@@ -52,11 +52,11 @@ var shopSenseApp = angular.module('shopSenseApp', ['ngRoute', 'firebase']);
             //LISTEN FOR RETURN KEY
             if (e.keyCode === 13 && $scope.posts) {
             	//ALLOW CUSTOM OR ANONYMOUS USER NAMES
-            	var author = $scope.author || 'anonymous';
-          		postRef.push({author: author, title: $scope.title});
+            	var author = $scope.authorInput || 'anonymous';
+          		postRef.push({author: author, title: $scope.titleInput});
              	//RESET MESSAGE
-            	$scope.author = "";
-            	$scope.title = "";
+            	$scope.authorInput = "";
+            	$scope.titleInput = "";
             }
           },
           //LISTEN FOR RETURN KEY AND SEND MESSAGE TO CONSOLE

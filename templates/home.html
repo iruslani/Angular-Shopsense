@@ -58,19 +58,43 @@
             <h3 class="panel-title"><label>Firebase Chat Demo:</label></h3>
           </div>
           <div class='panel-body'>
-            <div class='example-chat-toolbar'>
-              <label for='nameInput'>Username:</label>
-              <input ng-model='name' type='text' id='nameInput' placeholder='enter a username...'>
+            
+
+<form class="form-horizontal">
+ <div class="form-group">
+    <label for="inputSearch" class="col-sm-2 control-label">Search:</label>
+    <div class="col-sm-10">
+      <input type="text" ng-model="query" class="form-control" id="inputSearch" placeholder="Search Post">
+    </div>
+  </div>
+ <div class="form-group">
+    <label for="sortBy" class="col-sm-2 control-label">Sort By:</label>
+    <div class="col-sm-10">
+      <select id="sortBy" class="form-control" ng-model="orderProp" >
+        <option value="" selected disabled>Order list by... </option>
+        <option value="author">Authors</option>
+        <option value="title">Titles</option>
+      </select> 
+    </div>
+  </div>
+</form>
+
+
+<ul class="list-group">
+   <li class="list-group-item" ng-repeat='post in posts | filter:query | orderBy:orderProp'>
+      <strong class='example-chat-username'>{{post.author}}</strong>
+      <span class="badge">14</span> {{post .title}}
+    </li>
+</ul>
+
+
+            <div>
+              <label for='nameInput'>Author:</label>
+              <input ng-model='authorInput' type='text' id='nameInput' placeholder='enter a username...'>
+              <label for='nameInput'>Title:</label>
+              <input ng-model='titleInput' ng-keydown="addMessage($event)" type='text' id='messageInput'  placeholder='Type a message...'>
             </div>
-            <ul id='example-messages' class='example-chat-messages'>
-              <li ng-repeat='msg in messages'>
-                <strong class='example-chat-username'>{{msg.from}}</strong>
-                {{msg.body}}
-              </li>
-            </ul>
-            <footer>
-              <input ng-model='msg' ng-keydown="addMessage($event)" type='text' id='messageInput'  placeholder='Type a message...'>
-            </footer>
+
           </div>
         </div>
       </tab>
@@ -84,4 +108,4 @@
       <!-- Alert Tab Ends -->
     </tabset>
   </div>
-  <!-- Tabs Ends -->
+  <!-- Tabs Ends
