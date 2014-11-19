@@ -4,6 +4,20 @@
       <h1><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>Project name</a></h1>
     </div> 
   </div>
+
+<div class="row" ng-controller="LoginCtrl">
+  <div class="col-sm-12 col-md-12 ">
+    <div ng-show="user">
+      <p>Hello, {{ user.facebook.displayName }}</p>
+      <button ng-click="auth.$unauth()">Logout</button>
+    </div>
+    <div ng-hide="user">
+      <p>Welcome, please log in.</p>
+      <button ng-click="auth.$authWithOAuthPopup('facebook')">Login</button>
+    </div>
+  </div>
+</div>
+<br><br>
 <!-- Header Ends -->
 <!-- Taba Start -->
   <div ng-controller="TabsDemoCtrl">

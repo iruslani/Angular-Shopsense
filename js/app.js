@@ -1,6 +1,19 @@
 var shopSenseApp = angular.module('shopSenseApp', ['ngRoute', 'firebase']);
 
 
+// let's create a re-usable factory that generates the $firebaseAuth instance
+shopSenseApp.factory("Auth", ["$firebaseAuth", function($firebaseAuth) {
+  var ref = new Firebase("https://resplendent-heat-2011.firebaseio.com");
+  return $firebaseAuth(ref);
+}]);
+// and use it in our controller
+shopSenseApp.controller("LoginCtrl", ["$scope", "Auth", function($scope, Auth) {
+  $scope.auth = Auth;
+  $scope.user = $scope.auth.$getAuth();
+}])
+
+
+
  shopSenseApp.controller('ChatCtrl', ['$scope', '$firebase',
         function($scope, $firebase) {
         	var postRef = new Firebase("https://resplendent-heat-2011.firebaseio.com/posts");
