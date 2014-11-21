@@ -2,29 +2,34 @@ var shopSenseApp = angular.module('shopSenseApp', ['ngRoute', 'firebase']);
 
 
 // LET'S CREATE A RE-USABLE FACTORY THAT GENERATES THE $FIREBASEAUTH INSTANCE
-shopSenseApp.factory("Auth", ["$firebaseAuth", function($firebaseAuth) {
-	var ref = new Firebase("https://resplendent-heat-2011.firebaseio.com");
-	return $firebaseAuth(ref);
+shopSenseApp.factory("Auth", ["$firebaseAuth", 
+  function($firebaseAuth) {
+  	var ref = new Firebase("https://resplendent-heat-2011.firebaseio.com");
+  	return $firebaseAuth(ref);
 }]);
 // AND USE IT IN OUR CONTROLLER
-shopSenseApp.controller("LoginCtrl", ["$scope", "Auth", function($scope, Auth) {
-	$scope.auth = Auth;
-	$scope.user = $scope.auth.$getAuth();
+shopSenseApp.controller("LoginCtrl", ["$scope", "Auth", 
+  function($scope, Auth) {
+  	$scope.auth = Auth;
+  	$scope.user = $scope.auth.$getAuth();
 }]);
 // START CrudCtrl
-shopSenseApp.controller('CrudCtrl', ['$scope', '$firebase', function($scope, $firebase) {
-	var postRef = new Firebase("https://resplendent-heat-2011.firebaseio.com/posts");
-	$scope.posts = $firebase(postRef).$asArray();
-	var sync = $firebase(postRef);
+shopSenseApp.controller('CrudCtrl', ['$scope', '$firebase', 
+  function($scope, $firebase) {
+    var postRef = new Firebase("https://resplendent-heat-2011.firebaseio.com/posts");
+    var sync = $firebase(postRef);
+    // you can apply startAt() / endAt() / orderBy*() / limitTo*() to your references
+    // var sync = $firebase(postRef.limitToLast(10));
+    $scope.posts = sync.$asArray();
 
-  	$scope.addMessage = function(e) {
+  	$scope.addPost = function(e) {
         // LISTEN FOR RETURN KEY
         if (e.keyCode === 13 && $scope.posts) {
         	// ALLOW CUSTOM OR ANONYMOUS USER NAMES
         	var author = $scope.authorInput || 'anonymous';
       		sync.$push({author: author, title: $scope.titleInput}).then(function(newChildRef) {
-		  		console.log("added record with id " + newChildRef.key());
-			});
+  	  		console.log("added record with id " + newChildRef.key());
+  		});
          	// RESET MESSAGE	           	
         	$scope.authorInput = "";
         	$scope.titleInput = "";
@@ -32,15 +37,34 @@ shopSenseApp.controller('CrudCtrl', ['$scope', '$firebase', function($scope, $fi
         	//console.log($scope.posts);
         }
      },
-	$scope.addLike = function(e){
-		currentPost = e;
-		console.log(e);
-		console.log(e.target.attributes.value.value);
-		postKey = e.target.attributes.value.value;
-		var refLink = 'https://resplendent-heat-2011.firebaseio.com/posts/'+postKey;
-		console.log('refLink: ' + refLink);
-		/* NEED TO CODE LIKE FUNCTIONALITY BY COUNTING EACH TIME THE LIKE BUTTON IS PRESSED AND SAVING THIS DATA IN DB */
-	},
+  	$scope.addLike = function(e){
+  		currentPost = e;
+  		console.log(e);
+  		console.log(e.target.attributes.value.value);
+  		postKey = e.target.attributes.value.value;
+  		var refLink = 'https://resplendent-heat-2011.firebaseio.com/posts/'+postKey;
+  		console.log('refLink: ' + refLink);
+
+      var likeCount = $firebase(new Firebase(refLink + "/count"));
+
+      // Increment the message count by 1
+      likeCount.$transaction(function(currentCount) {
+        if (!currentCount) return 1;   // Initial value for counter.
+        if (currentCount < 0) return;  // Return undefined to abort transaction.
+        return currentCount + 1;       // Increment the count by 1.
+      }).then(function(snapshot) {
+        if (snapshot === null) {
+          // Handle aborted transaction.
+          console.log('aborted');
+        } else {
+          // Do something.
+          console.log(snapshot);
+        }
+      }, function(error) {
+        console.log("Error:", error);
+      });
+
+  	},
 
 	// CONSOLE LOG IN THE ORDER OF THE AUTHOR THE POST AUTHOR AND KEY WHEN THIS EVENT IS FIRED (START UP)
 	postRef.orderByChild("author").on("child_added", function(snapshot) {
