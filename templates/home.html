@@ -19,107 +19,101 @@
 </div>
 <br><br>
 <!-- Header Ends -->
-<!-- Taba Start -->
-  <div ng-controller="TabsDemoCtrl">
-    <tabset justified="true">
-      <!-- Simple Form Tab Start -->
-      <tab heading="Form Example">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-              <h3 class="panel-title"><label>Simple Form:</label></h3>
-          </div>
-          <div class="panel-body">
-            <div class="col-sm-3 col-md-2">
-                <input type="text" ng-model="hello" class="form-control" placeholder="Search...">
-            </div>
-            <div class="col-sm-3 col-md-2">
-              <p>You said: {{hello}}</p>
-            </div>       
+<!-- Tabs Start -->
+<div ng-controller="TabsDemoCtrl">
+  <tabset justified="true">
+    <!-- POST TAB START -->
+    <tab heading="API Example">
+      <div class="panel panel-default" ng-controller="CrudCtrl">  
+        <div class="panel-heading">
+          <h3 class="panel-title"><label>Firebase CRUD Demo:</label></h3>
+        </div>
+        <div class='panel-body'>
+        <form class="form-horizontal">
+        <div class="form-group">
+          <label for="inputSearch" class="col-sm-2 control-label">Search:</label>
+          <div class="col-sm-10">
+            <input type="text" ng-model="query" class="form-control" id="inputSearch" placeholder="Search Post">
           </div>
         </div>
-      </tab>
-      <!-- Simple Form Tab Ends -->
-      <!-- Todo Tab Start -->    
-      <tab heading="Todo Example">
-        <div class="panel panel-default" ng-controller="TodoController">
-          <div class="panel-heading">
-            <h3 class="panel-title"><label>Todo:</label></h3>
-          </div>
-          <div class="panel-body">
-            <div class="col-sm-5 col-md-5">
-              <form ng-submit="addTodo()">
-                <input type="text" ng-model="todoText"  size="30" placeholder="add new todo here">
-                <input class="btn-primary" type="submit" value="add">
-              </form>
-                <span>{{remaining()}} of {{todos.length}} remaining</span>[ <a href="" ng-click="archive()">archive</a> ]
-            </div>
-            <div class="col-sm-7 col-md-7">
-              <ul class="unstyled">
-                <li ng-repeat="todo in todos">
-                  <input type="checkbox" ng-model="todo.done">
-                  <span class="done-{{todo.done}}">{{todo.text}}</span>
-                </li>
-              </ul>
-            </div>    
+        <div class="form-group">
+          <label for="sortBy" class="col-sm-2 control-label">Sort By:</label>
+          <div class="col-sm-10">
+            <select id="sortBy" class="form-control" ng-model="orderProp" >
+              <option value="" selected disabled>Order list by... </option>
+              <option value="author">Authors</option>
+              <option value="title">Titles</option>
+            </select> 
           </div>
         </div>
-      </tab>
-      <!-- Todo Tab Ends -->
-      <tab heading="API Example">
-        <div class="panel panel-default" ng-controller="CrudCtrl">
-          <!-- CHAT MARKUP -->
-          <div class="panel-heading">
-            <h3 class="panel-title"><label>Firebase CRUD Demo:</label></h3>
-          </div>
-          <div class='panel-body'>
-            
-
-<form class="form-horizontal">
- <div class="form-group">
-    <label for="inputSearch" class="col-sm-2 control-label">Search:</label>
-    <div class="col-sm-10">
-      <input type="text" ng-model="query" class="form-control" id="inputSearch" placeholder="Search Post">
-    </div>
-  </div>
- <div class="form-group">
-    <label for="sortBy" class="col-sm-2 control-label">Sort By:</label>
-    <div class="col-sm-10">
-      <select id="sortBy" class="form-control" ng-model="orderProp" >
-        <option value="" selected disabled>Order list by... </option>
-        <option value="author">Authors</option>
-        <option value="title">Titles</option>
-      </select> 
-    </div>
-  </div>
-</form>
-
-
-<ul class="list-group">
-   <li class="list-group-item" ng-repeat='post in posts | filter:query | orderBy:orderProp'>
-      <strong class='example-chat-username'>{{post.author}}</strong>
-      <span class="badge">14</span> {{post.title}} &nbsp;<a href="" value="{{post.$id}}" ng-click="addLike($event)">Like</a>
-    </li>
-</ul>
-
-
-            <div>
-              <label for='nameInput'>Author:</label>
-              <input ng-model='authorInput' type='text' id='nameInput' placeholder='enter a username...'>
-              <label for='nameInput'>Title:</label>
-              <input ng-model='titleInput' ng-keydown="addMessage($event)" type='text' id='messageInput'  placeholder='Type a message...'>
-            </div>
-
-          </div>
+        </form>
+        <ul class="list-group">
+         <li class="list-group-item" ng-repeat='post in posts | filter:query | orderBy:orderProp'>
+            <strong class='example-chat-username'>{{post.author}}</strong>
+            <span class="badge">Likes {{post.count}}</span>{{post.title}} &nbsp;<a href="" value="{{post.$id}}" ng-click="addLike($event)">Like</a>
+          </li>
+        </ul>
+        <div>
+          <label for='nameInput'>Author:</label>
+          <input ng-model='authorInput' type='text' id='nameInput' placeholder='enter a username...'>
+          <label for='nameInput'>Title:</label>
+          <input ng-model='titleInput' ng-keydown="addPost($event)" type='text' id='messageInput'  placeholder='Type a message...'>
         </div>
-      </tab>
-      <!-- Alert Tab Start -->
-      <tab select="alertMe()">
-        <tab-heading>
-          <i class="glyphicon glyphicon-bell"></i> Alert! {{message}}
-        </tab-heading>
-        I've got an HTML heading, and a select callback. Pretty cool!
-      </tab>
-      <!-- Alert Tab Ends -->
-    </tabset>
-  </div>
+        </div>
+      </div>
+    </tab>
+    <!-- POST TAB END -->       
+    <!-- Simple Form Tab Start -->
+    <tab heading="Form Example">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title"><label>Simple Form:</label></h3>
+        </div>
+        <div class="panel-body">
+          <div class="col-sm-3 col-md-2">
+              <input type="text" ng-model="hello" class="form-control" placeholder="Search...">
+          </div>
+          <div class="col-sm-3 col-md-2">
+            <p>You said: {{hello}}</p>
+          </div>       
+        </div>
+      </div>
+    </tab>
+    <!-- Simple Form Tab Ends -->
+    <!-- Todo Tab Start -->    
+    <tab heading="Todo Example">
+      <div class="panel panel-default" ng-controller="TodoController">
+        <div class="panel-heading">
+          <h3 class="panel-title"><label>Todo:</label></h3>
+        </div>
+        <div class="panel-body">
+          <div class="col-sm-5 col-md-5">
+            <form ng-submit="addTodo()">
+              <input type="text" ng-model="todoText"  size="30" placeholder="add new todo here">
+              <input class="btn-primary" type="submit" value="add">
+            </form>
+              <span>{{remaining()}} of {{todos.length}} remaining</span>[ <a href="" ng-click="archive()">archive</a> ]
+          </div>
+          <div class="col-sm-7 col-md-7">
+            <ul class="unstyled">
+              <li ng-repeat="todo in todos">
+                <input type="checkbox" ng-model="todo.done">
+                <span class="done-{{todo.done}}">{{todo.text}}</span>
+              </li>
+            </ul>
+          </div>    
+        </div>
+      </div>
+    </tab>
+    <!-- Todo Tab Ends --> 
+    <!-- Alert Tab Start -->
+    <tab select="alertMe()">
+      <tab-heading>
+        <i class="glyphicon glyphicon-bell"></i> Alert! {{message}}
+      </tab-heading>
+      I've got an HTML heading, and a select callback. Pretty cool!
+    </tab>
+    <!-- Alert Tab Ends -->
+  </tabset>
+</div>
   <!-- Tabs Ends
